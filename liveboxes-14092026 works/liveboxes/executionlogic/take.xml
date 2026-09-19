@@ -1,4 +1,4 @@
-<env>
+<env viz="VIZ2">
 		<def var="elementID">
 			<var>element</var>
 		</def>
