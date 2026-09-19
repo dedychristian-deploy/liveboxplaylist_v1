@@ -3,7 +3,7 @@
 ## 1. MSE Profile Settings
 Mse using the mse config in studio/pcr
 The existing **On-Air profile** must use the same profile configuration/name as the one configured in the application and Studio/PCR.
-
+make name of profile and channel are identical
 Required profiles:
 
 * **On-Air Profile**
