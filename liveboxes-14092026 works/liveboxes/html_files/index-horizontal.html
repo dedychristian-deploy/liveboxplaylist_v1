@@ -4574,7 +4574,7 @@ function toggleFullscreen() {
                 await takeElementMSE(false, target);
 
                 // DEFAULT FIRST - note reorder_clear
-                //await sendVizCommand(`-1 MAIN_SCENE*TREE*$SCRIPT*SCRIPT INVOKE reorder_clear ${takeData.boxType}`,target);
+                await sendVizCommand(`-1 MAIN_SCENE*TREE*$SCRIPT*SCRIPT INVOKE reorder_clear_same_element ${takeData.boxType}`,target);
                 console.log(`call command reorder_clear ${takeData.boxType}`);
 
                 // RE-TAKE THE ELEMENT
