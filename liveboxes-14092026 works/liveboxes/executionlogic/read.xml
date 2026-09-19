@@ -32,10 +32,11 @@
 			</on_failure>
 		</http_request>
 	</env>
-	<env profile="/config/profiles/PREVIEW" viz="LIVEBOXPREVIEW">
-		<ref>/logic/element/run</ref>
+	<env profile="/config/profiles/PREVIEW" viz="PREVIEW">
+		<env command="take">
+			<ref>/logic/element/run</ref></env>
 		<forked_exec>
-			<entry name="execution_group">LIVEBOXPREVIEW</entry>
+			<entry name="execution_group">PREVIEW</entry>
 			<viz>RENDERER*TREE*$SCRIPT*SCRIPT INVOKE msg_director_take <var>elementID</var>|<ref><var>element</var>/data/SetBoxes/SetBoxes</ref>
 			</viz>
 		</forked_exec>
